@@ -10,18 +10,22 @@ class TestRunner():
 
     def __init__(self, args):
 
+        self.args = args
+
         self.backends = [
             'https://backend.iobio.io',
             'https://mosaic.chpc.utah.edu/gru/api/v1',
             'https://mosaic.chpc.utah.edu/gru-dev',
         ]
 
+    def run(self):
+
         # single file
-        if args.path.endswith('.json'):
+        if self.args.path.endswith('.json'):
             for backend in self.backends:
-                self.handle_test(backend, args.path)
+                self.handle_test(backend, self.args.path)
         else :
-            for (dirpath, dirnames, filenames) in os.walk(args.path):
+            for (dirpath, dirnames, filenames) in os.walk(self.args.path):
                 for filename in filenames:
                     if Path(filename).suffix == '.json':
                         path = os.path.join(dirpath, filename)
@@ -95,4 +99,11 @@ if __name__ == '__main__':
     parser.add_argument('--path', default='.', help='Path to start searching for tests')
     args = parser.parse_args()
 
-    TestRunner(args)
+    runner = TestRunner(args)
+
+    try:
+        while True:
+            runner.run()
+            time.sleep(3600)
+    except KeyboardInterrupt:
+        print("Aborting")
