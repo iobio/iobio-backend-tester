@@ -80,11 +80,11 @@ class TestRunner():
         }
 
         if not success:
-            print("\nFailed. Response body:\n")
-            print(body)
-            print("\ncurl repro command:\n")
-            print(build_curl(url, config['data']))
-            print("\n")
+            print("\nFailed. Response body:\n", file=sys.stderr)
+            print(body, file=sys.stderr)
+            print("\ncurl repro command:\n", file=sys.stderr)
+            print(build_curl(url, config['data']), file=sys.stderr)
+            print("\n", file=sys.stderr)
 
         print(json.dumps(log), flush=True)
 
@@ -106,4 +106,4 @@ if __name__ == '__main__':
             runner.run()
             time.sleep(3600)
     except KeyboardInterrupt:
-        print("Aborting")
+        print("Aborting", file=sys.stderr)
