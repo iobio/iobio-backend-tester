@@ -1,0 +1,10 @@
+{
+  "endpoint": "/annotateVariants",
+  "data": {"vcfUrl":"https://s3.amazonaws.com/iobio/samples/vcf/platinum-exome.vcf.gz","tbiUrl":"https://s3.amazonaws.com/iobio/samples/vcf/platinum-exome.vcf.gz.tbi","refNames":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","X","Y"],"regions":[{"name":"17","start":17583787,"end":17715767}],"vcfSampleNames":["NA12878","NA12892","NA12891","NA12877"],"refFastaFile":"./data/references/homo_sapiens/GRCh37/hs_ref_chr17.fa","genomeBuildName":"GRCh37","isRefSeq":false,"hgvsNotation":false,"getRsId":false,"vepAF":true,"sfariMode":false,"vepREVELFile":"./vep-cache/revel_all_chromosomes_for_vep.tsv.gz","gnomadUrl":null,"gnomadRegionStr":null,"decompose":true,"gnomadRenameChr":null},
+  "checks": [
+    {
+      "type": "contains",
+      "value": "--bam ../NA12878.exome/NA12878.exome.bam"
+    }
+  ]
+}

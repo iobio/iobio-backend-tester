@@ -1,0 +1,12 @@
+{
+  "endpoint": "/craiReadDepth",
+  "data": {
+    "url": "https://iobio.s3.amazonaws.com/samples/cram/NA12878.GRCh38.exome.cram.crai"
+  },
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "#3365\n"
+    }
+  ]
+}

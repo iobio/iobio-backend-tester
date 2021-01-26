@@ -1,0 +1,12 @@
+{
+  "endpoint": "/alignmentHeader",
+  "data": {
+    "url": "https://iobio.s3.amazonaws.com/samples/bam/NA12878.GRCh38.bam"
+  },
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "@RG\\tID:NA12878\\tPL:ILLUMINA\\tSM:NA12878 /uufs/chpc.utah.edu/common/home/marth-d1/data/software/chpc/kingspeak.peaks/gkno_launcher/resources/homo_sapiens_grch38/current/GRCh38_full_analysis_set_plus_decoy_hla.fa ../fastq/NA12878_1.fastq ../fastq/NA12878_2.fastq\n"
+    }
+  ]
+}

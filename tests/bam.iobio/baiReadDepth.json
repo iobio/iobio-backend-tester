@@ -1,0 +1,12 @@
+{
+  "endpoint": "/baiReadDepth",
+  "data": {
+    "url": "https://iobio.s3.amazonaws.com/samples/bam/NA12878.GRCh38.bam.bai"
+  },
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "*\t\t0"
+    }
+  ]
+}

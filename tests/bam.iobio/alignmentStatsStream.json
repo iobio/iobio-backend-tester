@@ -1,0 +1,114 @@
+{
+  "endpoint": "/alignmentStatsStream",
+  "data": {
+    "url": "https://iobio.s3.amazonaws.com/samples/bam/NA12878.GRCh38.bam",
+    "regions": [
+      {
+        "name": "chr1",
+        "start": 18573725,
+        "end": 18583725
+      },
+      {
+        "name": "chr10",
+        "start": 44503548,
+        "end": 44513548
+      },
+      {
+        "name": "chr10",
+        "start": 45620663,
+        "end": 45630663
+      },
+      {
+        "name": "chr12",
+        "start": 43318095,
+        "end": 43328095
+      },
+      {
+        "name": "chr13",
+        "start": 44297670,
+        "end": 44307670
+      },
+      {
+        "name": "chr15",
+        "start": 89074783,
+        "end": 89084783
+      },
+      {
+        "name": "chr15",
+        "start": 91271775,
+        "end": 91281775
+      },
+      {
+        "name": "chr19",
+        "start": 54273274,
+        "end": 54283274
+      },
+      {
+        "name": "chr2",
+        "start": 231805345,
+        "end": 231815345
+      },
+      {
+        "name": "chr21",
+        "start": 12998886,
+        "end": 13008886
+      },
+      {
+        "name": "chr21",
+        "start": 34248094,
+        "end": 34258094
+      },
+      {
+        "name": "chr3",
+        "start": 17842310,
+        "end": 17852310
+      },
+      {
+        "name": "chr3",
+        "start": 189303267,
+        "end": 189313267
+      },
+      {
+        "name": "chr4",
+        "start": 4500009,
+        "end": 4510009
+      },
+      {
+        "name": "chr6",
+        "start": 49354060,
+        "end": 49364060
+      },
+      {
+        "name": "chr7",
+        "start": 38816636,
+        "end": 38826636
+      },
+      {
+        "name": "chr7",
+        "start": 60851595,
+        "end": 60861595
+      },
+      {
+        "name": "chr7",
+        "start": 101662652,
+        "end": 101672652
+      },
+      {
+        "name": "chr7",
+        "start": 130734855,
+        "end": 130744855
+      },
+      {
+        "name": "chrX",
+        "start": 121810956,
+        "end": 121820956
+      }
+    ]
+  },
+  "checks": [
+    {
+      "type": "contains",
+      "value": "refAln_hist"
+    }
+  ]
+}

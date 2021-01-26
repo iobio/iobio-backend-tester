@@ -1,0 +1,10 @@
+{
+  "endpoint": "/freebayesJointCall",
+  "data": {"alignmentSources":[{"bamUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12878.exome.bam","baiUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12878.exome.bam.bai"},{"bamUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12892.exome.bam","baiUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12892.exome.bam.bai"},{"bamUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12891.exome.bam","baiUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12891.exome.bam.bai"}],"refFastaFile":"./data/references/homo_sapiens/GRCh37/hs_ref_chr17.fa","region":{"refName":"17","start":17583787,"end":17715767},"fbArgs":{"useSuggestedVariants":{"value":true,"defaultValue":true},"limitToSuggestedVariants":{"value":false,"defaultValue":false,"argName":"-l","isFlag":true},"minMappingQual":{"value":0,"defaultValue":0,"argName":"--min-mapping-quality"},"minCoverage":{"value":0,"defaultValue":0,"argName":"--min-coverage"},"useDupReads":{"value":false,"defaultValue":false,"argName":"--use-duplicate-reads","isFlag":true}},"refNames":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","X","Y"],"genomeBuildName":"GRCh37","vepREVELFile":"./vep-cache/revel_all_chromosomes_for_vep.tsv.gz","vepAF":true,"isRefSeq":false,"clinvarUrl":"https://backend.iobio.io/static/clinvar/GRCh37/clinvar.vcf.gz","sampleNames":["NA12878","NA12892","NA12891"],"gnomadUrl":"https://gnomad-public-us-east-1.s3.amazonaws.com/release/2.1.1/vcf/genomes/gnomad.genomes.r2.1.1.sites.17.vcf.bgz","gnomadRegionStr":"17\t17583787\t17715767","decompose":true},
+  "checks": [
+    {
+      "type": "contains",
+      "value": "##fileDate=20210126\n##source=freeBayes v1.3.1"
+    }
+  ]
+}

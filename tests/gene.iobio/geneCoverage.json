@@ -1,0 +1,10 @@
+{
+  "endpoint": "/geneCoverage",
+  "data": {"url":"https://s3.amazonaws.com/iobio/samples/bam/NA12878.exome.bam","indexUrl":"https://s3.amazonaws.com/iobio/samples/bam/NA12878.exome.bam.bai","refName":"17","geneName":"RAI1","regionStart":17583787,"regionEnd":17715767,"regions":[{"start":"17696263","end":"17701827"},{"start":"17707070","end":"17707163"},{"start":"17712704","end":"17712753"},{"start":"17713284","end":"17713295"}]},
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "RAI1\tNA\t28\t63\t40\t44\t50\t45.3122\t6.88684\n"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "/vcfReadDepth",
+  "data": {"url":"https://s3.amazonaws.com/iobio/samples/vcf/platinum-exome.vcf.gz.tbi"},
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "24477696\t0\n24494080\t0\n24510464\t0\n24526848\t0\n24543232\t8752"
+    }
+  ]
+}

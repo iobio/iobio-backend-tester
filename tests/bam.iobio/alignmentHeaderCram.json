@@ -1,0 +1,12 @@
+{
+  "endpoint": "/alignmentHeader",
+  "data": {
+    "url": "https://iobio.s3.amazonaws.com/samples/cram/NA12878.GRCh38.cram"
+  },
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "@RG\tID:NA12878\tPL:ILLUMINA\tSM:NA12878\n"
+    }
+  ]
+}

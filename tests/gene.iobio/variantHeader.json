@@ -1,0 +1,10 @@
+{
+  "endpoint": "/variantHeader",
+  "data": {"url":"https://s3.amazonaws.com/iobio/samples/vcf/platinum-exome.vcf.gz","indexUrl":"https://s3.amazonaws.com/iobio/samples/vcf/platinum-exome.vcf.gz.tbi"},
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tNA12877\tNA12878\tNA12891\tNA12892\n"
+    }
+  ]
+}
