@@ -86,7 +86,7 @@ class TestRunner():
             print(build_curl(url, config['data']))
             print("\n")
 
-        print(json.dumps(log))
+        print(json.dumps(log), flush=True)
 
 
 def build_curl(url, data):
