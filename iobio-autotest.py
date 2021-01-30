@@ -20,18 +20,25 @@ class TestRunner():
 
     def run(self):
 
-        # single file
+        # single specific test
         if self.args.path.endswith('.json'):
-            for backend in self.backends:
-                self.handle_test(backend, self.args.path)
-        else :
-            for (dirpath, dirnames, filenames) in os.walk(self.args.path):
-                for filename in filenames:
-                    if Path(filename).suffix == '.json':
-                        path = os.path.join(dirpath, filename)
 
-                        for backend in self.backends:
-                            self.handle_test(backend, path)
+            if self.args.backend is not None:
+                    self.handle_test(self.args.backend, self.args.path)
+            else:
+                for backend in self.backends:
+                    self.handle_test(backend, self.args.path)
+        else :
+
+            while True:
+                for (dirpath, dirnames, filenames) in os.walk(self.args.path):
+                    for filename in filenames:
+                        if Path(filename).suffix == '.json':
+                            path = os.path.join(dirpath, filename)
+
+                            for backend in self.backends:
+                                self.handle_test(backend, path)
+                time.sleep(3600)
 
     def handle_test(self, backend, path):
         with open(path) as f:
@@ -97,13 +104,12 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', default='.', help='Path to start searching for tests')
+    parser.add_argument('--backend', help='Backend to use')
     args = parser.parse_args()
 
     runner = TestRunner(args)
 
     try:
-        while True:
-            runner.run()
-            time.sleep(3600)
+        runner.run()
     except KeyboardInterrupt:
         print("Aborting", file=sys.stderr)
