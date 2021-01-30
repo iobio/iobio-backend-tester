@@ -76,7 +76,7 @@ class TestRunner():
         end_time = time.perf_counter()
         elapsed = end_time - start_time
 
-        time_now = datetime.now().replace(microsecond=0).isoformat()
+        time_now = datetime.utcnow().replace(microsecond=0).isoformat()
 
         log = {
             'timestamp': time_now,
