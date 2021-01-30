@@ -4,7 +4,7 @@
   "checks": [
     {
       "type": "contains",
-      "value": "##fileDate=20210126\n##source=freeBayes v1.3.1"
+      "value": "##source=freeBayes v1.3.1"
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "endpoint": "/freebayesJointCall",
+  "data": {"alignmentSources":[{"bamUrl":"https://iobio.s3.amazonaws.com/samples/cram/NA12878.GRCh38.exome.cram","baiUrl":null},{"bamUrl":"https://iobio.s3.amazonaws.com/samples/cram/NA12892.GRCh38.exome.cram","baiUrl":null},{"bamUrl":"https://iobio.s3.amazonaws.com/samples/cram/NA12891.GRCh38.exome.cram","baiUrl":null}],"refFastaFile":"./data/references/homo_sapiens/hg38/chr17.fa","region":{"refName":"chr17","start":43043295,"end":43171245},"fbArgs":{"useSuggestedVariants":{"value":true,"defaultValue":true},"limitToSuggestedVariants":{"value":false,"defaultValue":false,"argName":"-l","isFlag":true},"minMappingQual":{"value":0,"defaultValue":0,"argName":"--min-mapping-quality"},"minCoverage":{"value":0,"defaultValue":0,"argName":"--min-coverage"},"useDupReads":{"value":false,"defaultValue":false,"argName":"--use-duplicate-reads","isFlag":true}},"refNames":["chr1","chr2","chr3","chr4","chr5","chr6","chr7","chr8","chr9","chr10","chr11","chr12","chr13","chr14","chr15","chr16","chr17","chr18","chr20","chr21","chr22","chrX","chrY"],"genomeBuildName":"GRCh38","vepREVELFile":"./vep-cache/revel_all_chromosomes_for_vep.tsv.gz","vepAF":true,"isRefSeq":false,"clinvarUrl":"https://backend.iobio.io/static/clinvar/GRCh38/clinvar.vcf.gz","sampleNames":["NA12878","NA12892","NA12891"],"gnomadUrl":"https://gnomad-public-us-east-1.s3.amazonaws.com/release/3.1/vcf/genomes/gnomad.genomes.v3.1.sites.chr17.vcf.bgz","gnomadRegionStr":"chr17\t43043295\t43171245","decompose":true},
+  "checks": [
+    {
+      "type": "contains",
+      "value": "##source=freeBayes v1.3.1"
+    }
+  ]
+}

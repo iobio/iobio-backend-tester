@@ -1,0 +1,10 @@
+{
+  "endpoint": "/alignmentCoverage",
+  "data": {"url":"https://iobio.s3.amazonaws.com/samples/cram/NA12878.GRCh38.exome.cram","indexUrl":null,"samtoolsRegion":{"refName":"chr17","start":43043295,"end":43171245},"maxPoints":2000,"coverageRegions":[{"name":"17","start":43063807,"end":43063808},{"name":"17","start":43067542,"end":43067543},{"name":"17","start":43067762,"end":43067763},{"name":"17","start":43067786,"end":43067787},{"name":"17","start":43071076,"end":43071077},{"name":"17","start":43074583,"end":43074584},{"name":"17","start":43079498,"end":43079499},{"name":"17","start":43082452,"end":43082453},{"name":"17","start":43091982,"end":43091983},{"name":"17","start":43092417,"end":43092418},{"name":"17","start":43092918,"end":43092919},{"name":"17","start":43093219,"end":43093220},{"name":"17","start":43093448,"end":43093449},{"name":"17","start":43097345,"end":43097346},{"name":"17","start":43104057,"end":43104058},{"name":"17","start":43104082,"end":43104083},{"name":"17","start":43138656,"end":43138657},{"name":"17","start":43139761,"end":43139762},{"name":"17","start":43139935,"end":43139936}]},
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "43171057\t0\n43171120\t0\n43171183\t0\n"
+    }
+  ]
+}

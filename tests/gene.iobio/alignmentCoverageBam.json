@@ -1,0 +1,10 @@
+{
+  "endpoint": "/alignmentCoverage",
+  "data": {"url":"https://iobio.s3.amazonaws.com/samples/bam/NA12878.GRCh38.bam","indexUrl":null,"samtoolsRegion":{"refName":"chr17","start":43043295,"end":43171245},"maxPoints":2000,"coverageRegions":[]},
+  "checks": [
+    {
+      "type": "endswith",
+      "value": "43171057\t0\n43171120\t0\n43171183\t0\n"
+    }
+  ]
+}
